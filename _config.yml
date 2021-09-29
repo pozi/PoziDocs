@@ -25,7 +25,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PoziApp
 github_username:  pozi
-logo: "/assets/images/pozi-help-logo.svg"
+logo: "/assets/images/pozi-help-logo.png"
 search_enabled: true
 
 # Build settings
