@@ -12,6 +12,4 @@ Customised Pozi maps can be embedded in your organisation’s web pages using a 
 <iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://bendigo.pozi.com/"></iframe>
 ```
 
-<figure class="video_container">
 <iframe width="100%" height="500px" frameborder="0" scrolling="no" src="https://bendigo.pozi.com/"></iframe>
-</figure>
