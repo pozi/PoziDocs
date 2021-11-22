@@ -129,9 +129,7 @@ QGIS_SERVER_LOG_LEVEL = "0"
 QGIS_PLUGINPATH = "C:\OSGeo4W\apps\qgis-ltr\plugins"
 ```
 
-![PROJ_LIB environment variable](G:\My Drive\Notes\pozi-qgis-server-iis.png)
-
-
+<img src="img/pozi-qgis-server-iis.png" alt="FastCGI Settings" style="zoom:60%;" />
 
 ### Application Pool
 
@@ -150,3 +148,9 @@ Set the user for the PoziQgisServer application pool:
 Set permissions for ```IIS AppPool\PoziQgisServer``` :
 
 - IIS > select server > Application Pools > PoziQgisServer > Advanced settings > Identity > Application Pool Identity > Custom account > enter details of the domain user that runs Pozi "service" account
+
+## Reference for Pozi Developers
+
+Development notes that may contain useful additional information for Pozi developers.
+
+* https://github.com/pozi/PoziServer/pull/40#issuecomment-972331899
