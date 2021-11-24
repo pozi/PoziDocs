@@ -149,6 +149,8 @@ Set permissions for ```IIS AppPool\PoziQgisServer``` :
 
 - IIS > select server > Application Pools > PoziQgisServer > Advanced settings > Identity > Application Pool Identity > Custom account > enter details of the domain user that runs Pozi "service" account
 
+![Grant read permission for Pozi Server data folder to IIS AppPool\PoziQgisServer](img/pozi-server-iis-apppool-poziqgisserver-permissions.png)
+
 ## Reference for Pozi Developers
 
 Development notes that may contain useful additional information for Pozi developers.
