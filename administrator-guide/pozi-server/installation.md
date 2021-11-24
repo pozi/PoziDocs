@@ -16,6 +16,8 @@ grand_parent: Administrator Guide
 ## Download
 
 1. download the [Pozi Connect Server installer](https://connect.pozi.com/installer/PoziConnectInstaller.exe)
+2. mkdir "C:\Program Files (x86)\Pozi\userdata\local"
+3. mklink /D "C:\Program Files (x86)\Pozi\userdata\local\sample" "C:\Program Files (x86)\Pozi\server\data\local\sample"
 
 ## Troubleshooting
 
