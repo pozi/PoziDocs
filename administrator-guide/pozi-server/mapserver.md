@@ -1,60 +1,35 @@
 ---
 layout: default
-title: QGIS Server
+title: MapServer
 parent: Pozi Server
 grand_parent: Administrator Guide
 ---
 
-# QGIS Server
+# MapServer
 
 ## Installation
 
 On the server on which Pozi Server is installed:
 
-* if any previous version of QGIS Desktop has been installed using the stand-alone installer, uninstall it
-* go to https://trac.osgeo.org/osgeo4w/
-* click on link for OSGeo4W network installer
-* download https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe
-* right-click on osgeo4w-setup.exe, "Run as administrator"
-* Advanced Install, accept defaults
-* Install for all users, accept defaults
-* Choose a download site, select top one, Next
-* Select Packages
-  * Desktop
-    * qgis-ltr - click on the word 'Skip' to toggle through to the latest version (eg 3.16.8-3)
-  * Libs
-    * gdal-ecw
-    * gdal-mss
-  * Web
-    * qgis-ltr-server
-* Next, accept defaults, "Install these packages...", Next, "I agree...", Next
+MapServer is installed with Pozi Server in the following default location:
+
+```
+C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\ms\apps\mapserv.exe
+```
 
 
 
 ## IIS Integration
 
-QGIS Server IIS Integration using FastCGI.
+MapServer IIS Integration using FastCGI.
 
-NOTE: You should install QGIS Server using the v2 installer available from the link below which installs 
-64-bit QGIS Server defaulting to the path `C:\OSGeo4W`:
-
-https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe
-
-Make sure you run as Administrator so that you install for all users, and select Advanced so that you can
-install QGIS Server.  Ensure that you install the `gdal-ecw` and `gdal-mss` plugins from the Libs section
-so that you can read ECW images and can utilise the SQL Server Native Client driver.
-
-NOTE: I am using the path C:\Pozi temporarily, and the configuration will eventually be deployed 
-under `C:\Program Files (x86)\Pozi` but I am keeping it separated until it is ready.
+The default 
 
 Open a command prompt window (as a normal user, not an administrator), and copy and paste these commands into it.
 
 ```
-mkdir C:\Pozi
-mkdir C:\Pozi\wwwroot
-mkdir C:\Pozi\QgisServer
-mkdir C:\Pozi\QgisServer\wwwroot
-mkdir C:\Pozi\QgisServer\logs
+mkdir C:\Program Files (x86)\Pozi\server\data\iis\Pozi\MapServer
+mkdir C:\Program Files (x86)\Pozi\server\data\iis\logs
 ```
 
 
@@ -75,15 +50,15 @@ dism /Online /Enable-Feature /FeatureName:IIS-CGI
 ### Configure IIS
 
 ```
-"%systemroot%\system32\inetsrv\appcmd" add app /site.name:"Default Web Site" /path:/Pozi /physicalPath:"C:\Pozi\wwwroot"
-"%systemroot%\system32\inetsrv\appcmd" add app /site.name:"Default Web Site" /path:/Pozi/QgisServer /physicalPath:"C:\Pozi\QgisServer\wwwroot"
+"%systemroot%\system32\inetsrv\appcmd" add app /site.name:"Default Web Site" /path:/Pozi /physicalPath:"C:\Program Files (x86)\Pozi\server\data\iis\Pozi"
+"%systemroot%\system32\inetsrv\appcmd" add app /site.name:"Default Web Site" /path:/Pozi/MapServer /physicalPath:"C:\Program Files (x86)\Pozi\server\data\iis\Pozi\MapServer"
 ```
 
 
 
-Go to `C:\Pozi\QgisServer\wwwroot`, and create a blank text file called `web.config`, paste into it the following text, then save it.
+Go to `C:\Program Files (x86)\Pozi\server\data\iis\Pozi\MapServer`, and create a blank text file called `web.config`, paste into it the following text, then save it.
 
-(If you're unable to create a blank document, right-click on the `C:\Pozi\` folder, Properties > Security > Edit > Add > add domain user > allow Modify and Write permissions.)
+(If you're unable to create a blank document, right-click on the `C:\Program Files (x86)\Pozi\server\data\iis\Pozi` folder, Properties > Security > Edit > Add > add domain user > allow Modify and Write permissions.)
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
