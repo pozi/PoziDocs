@@ -27,12 +27,11 @@ The default
 
 Open a command prompt window (as a normal user, not an administrator), and copy and paste these commands into it.
 
-```
-mkdir C:\Program Files (x86)\Pozi\server\data\iis\Pozi\MapServer
-mkdir C:\Program Files (x86)\Pozi\server\data\iis\logs
-```
+NOTE: Pozi Server 2.2.8 ships with default configuration files for MapServer IIS Integration using FastCGI -- the following folder is assumed to exist if you have installed Pozi Server to the default `C:\Program Files (x86)\Pozi` location:
 
-
+```
+C:\Program Files (x86)\Pozi\server\iis\Pozi\MapServer
+```
 
 ### Install IIS
 
@@ -50,22 +49,24 @@ dism /Online /Enable-Feature /FeatureName:IIS-CGI
 ### Configure IIS
 
 ```
-"%systemroot%\system32\inetsrv\appcmd" add app /site.name:"Default Web Site" /path:/Pozi /physicalPath:"C:\Program Files (x86)\Pozi\server\data\iis\Pozi"
-"%systemroot%\system32\inetsrv\appcmd" add app /site.name:"Default Web Site" /path:/Pozi/MapServer /physicalPath:"C:\Program Files (x86)\Pozi\server\data\iis\Pozi\MapServer"
+"%systemroot%\system32\inetsrv\appcmd" add app /site.name:"Default Web Site" /path:/Pozi /physicalPath:"C:\Program Files (x86)\Pozi\server\iis\Pozi"
+"%systemroot%\system32\inetsrv\appcmd" add app /site.name:"Default Web Site" /path:/Pozi/MapServer /physicalPath:"C:\Program Files (x86)\Pozi\server\iis\Pozi\MapServer"
 ```
 
+There should be `web.config` file located at the following path:
 
+```
+C:\Program Files (x86)\Pozi\server\iis\Pozi\MapServer
+```
 
-Go to `C:\Program Files (x86)\Pozi\server\data\iis\Pozi\MapServer`, and create a blank text file called `web.config`, paste into it the following text, then save it.
-
-(If you're unable to create a blank document, right-click on the `C:\Program Files (x86)\Pozi\server\data\iis\Pozi` folder, Properties > Security > Edit > Add > add domain user > allow Modify and Write permissions.)
+NOTE: If you have installed Pozi Server to a location other than the default `C:\Program Files (x86)\Pozi` then you will need to update that path in the `web.config` below:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <system.webServer>
         <handlers>
-            <add name="PoziQgisServerFastCgi" path="*" verb="*" type="" modules="FastCgiModule" scriptProcessor="C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe"
+            <add name="PoziMapServerFastCgi" path="*" verb="*" type="" modules="FastCgiModule" scriptProcessor="C:\Program Files (x86)\Pozi\server\vendor\gdal\bin\ms\apps\mapserv.exe"
             resourceType="Unspecified" requireAccess="Script" allowPathInfo="false" preCondition=""  />
         </handlers>
         <caching enabled="true" enableKernelCache="true" />
@@ -73,57 +74,47 @@ Go to `C:\Program Files (x86)\Pozi\server\data\iis\Pozi\MapServer`, and create a
 </configuration>
 ```
 
-
-
 Back in the command prompt, run the following:
+
+NOTE: If you have installed QGIS Server to a location other than the default `C:\Program Files (x86)\Pozi` then you will need to update that path in the commands below:
 
 ```
 %windir%\system32\inetsrv\appcmd.exe unlock config -section:system.webServer/handlers
 
-"%systemroot%\system32\inetsrv\appcmd" set config -section:system.webServer/fastCgi /+"[fullPath='C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe']" /commit:apphost
+"%systemroot%\system32\inetsrv\appcmd" set config -section:system.webServer/fastCgi /+"[fullPath='C:\Program Files (x86)\Pozi\server\vendor\gdal\bin\ms\apps\mapserv.exe']" /commit:apphost
 
-"%systemroot%\system32\inetsrv\appcmd" set config /section:isapiCgiRestriction /+"[path='C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe',description='PoziQgisServer',allowed='True']"
+"%systemroot%\system32\inetsrv\appcmd" set config /section:isapiCgiRestriction /+"[path='C:\Program Files (x86)\Pozi\server\vendor\gdal\bin\ms\apps\mapserv.exe',description='PoziMapServer',allowed='True']"
 ```
-
 
 
 Windows > IIS > select server > Fast CGISettings > select item we just configured > Edit > Environment variables:
 
 ```
-PATH = "C:\OSGeo4W\apps\qgis-ltr\bin;C:\OSGeo4W\apps\qt5\bin;C:\OSGeo4W\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32\WBem"
-O4W_QT_PREFIX = "C:\OSGeo4W\apps\Qt5"
-O4W_QT_BINARIES = "C:\OSGeo4W\apps\Qt5\bin"
-O4W_QT_PLUGINS = "C:\OSGeo4W\apps\Qt5\plugins"
-O4W_QT_LIBRARIES = "C:\OSGeo4W\apps\Qt5\lib"
-O4W_QT_TRANSLATIONS = "C:\OSGeo4W\apps\Qt5\translations"
-O4W_QT_HEADERS = "C:\OSGeo4W\apps\Qt5\include"
-QGIS_PREFIX_PATH = "C:\OSGeo4W\apps\qgis-ltr"
-QT_PLUGIN_PATH = "C:\OSGeo4W\apps\qt5\plugins"
-TEMP = "C:\Windows\Temp"
-PYTHONHOME = "C:\OSGeo4W\apps\Python39"
-QGIS_SERVER_LOG_FILE = "C:\Pozi\QgisServer\logs\qgis_server.log"
-QGIS_SERVER_LOG_LEVEL = "0"
-QGIS_PLUGINPATH = "C:\OSGeo4W\apps\qgis-ltr\plugins"
+PATH = C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin;C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\gdal\python\osgeo;C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\proj6\apps;C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\gdal\apps;C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\ms\apps;C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\gdal\csharp;C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\ms\csharp;C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\curl;C:\Windows\system32;C:\Windows;C:\Windows\system32\WBem
+GDAL_DATA = C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\gdal-data
+GDAL_DRIVER_PATH = C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\gdal\plugins
+PYTHONPATH = C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\gdal\python;C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\ms\python
+PROJ_LIB = C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\proj\share
 ```
 
 <img src="img/pozi-qgis-server-iis.png" alt="FastCGI Settings" style="zoom:60%;" />
 
 ### Application Pool
 
-- Create PoziQgisServer application pool
+- Create PoziMapServer application pool
 
 ```
-"%systemroot%\system32\inetsrv\appcmd.exe" add apppool /name:"PoziQgisServer"
+"%systemroot%\system32\inetsrv\appcmd.exe" add apppool /name:"PoziMapServer"
 
-"%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.applicationHost/applicationPools /+"[name='PoziQgisServer'].recycling.periodicRestart.schedule.[value='02:00:00']" /commit:apphost
+"%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.applicationHost/applicationPools /+"[name='PoziMapServer'].recycling.periodicRestart.schedule.[value='02:00:00']" /commit:apphost
 ```
 
 
-Set the user for the PoziQgisServer application pool:
+Set the user for the PoziMapServer application pool:
 
-- IIS > select server > Sites > Default Web Site > Pozi > QgisServer > Advanced Settings > Application Pool > set to PoziQgisServer
+- IIS > select server > Sites > Default Web Site > Pozi > MapServer > Advanced Settings > Application Pool > set to PoziMapServer
 
-Set permissions for ```IIS AppPool\PoziQgisServer``` :
+Set permissions for ```IIS AppPool\PoziMapServer``` :
 
 - IIS > select server > Application Pools > PoziQgisServer > Advanced settings > Identity > Application Pool Identity > Custom account > enter details of the domain user that runs Pozi "service" account
 
@@ -136,10 +127,10 @@ Development notes that may contain useful additional information for Pozi develo
 * https://github.com/pozi/PoziServer/pull/40#issuecomment-972331899
 
 
-## Configuring Clean Urls for QGIS Server FastCGI
+## Configuring Clean Urls for MapServer FastCGI
 
 
-`/Pozi/QgisServer/Next/VicMap`
+`/Pozi/MapServer/Next/VicMapFeatures`
 
 
 ```
