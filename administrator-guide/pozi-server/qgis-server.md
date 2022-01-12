@@ -12,9 +12,9 @@ grand_parent: Administrator Guide
 On the server on which Pozi Server is installed:
 
 * if any previous version of QGIS Desktop has been installed using the stand-alone installer, uninstall it
-* go to https://trac.osgeo.org/osgeo4w/
+* go to [https://trac.osgeo.org/osgeo4w/](https://trac.osgeo.org/osgeo4w/)
 * click on link for OSGeo4W network installer
-* download https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe
+* download [https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe)
 * right-click on osgeo4w-setup.exe, "Run as administrator"
 * Advanced Install, accept defaults
 * Install for all users, accept defaults
@@ -37,7 +37,7 @@ QGIS Server IIS Integration using FastCGI.
 NOTE: You should install QGIS Server using the v2 installer available from the link below which installs 
 64-bit QGIS Server defaulting to the path `C:\OSGeo4W`:
 
-https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe
+[https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe)
 
 Make sure you run as Administrator so that you install for all users, and select Advanced so that you can
 install QGIS Server.  Ensure that you install the `gdal-ecw` and `gdal-mss` plugins from the Libs section
@@ -174,7 +174,7 @@ Set permissions for ```IIS AppPool\PoziQgisServer``` :
 
 Development notes that may contain useful additional information for Pozi developers.
 
-* https://github.com/pozi/PoziServer/pull/40#issuecomment-972331899
+* [https://github.com/pozi/PoziServer/pull/40#issuecomment-972331899](https://github.com/pozi/PoziServer/pull/40#issuecomment-972331899)
 
 
 ## Configuring Clean Urls for QGIS Server FastCGI
