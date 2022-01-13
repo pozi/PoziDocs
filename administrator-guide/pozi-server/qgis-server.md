@@ -39,8 +39,8 @@ NOTE: You should install QGIS Server using the v2 installer available from the l
 
 [https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe)
 
-Make sure you run as Administrator so that you install for all users, and select Advanced so that you can
-install QGIS Server.  Ensure that you install the `gdal-ecw` and `gdal-mss` plugins from the Libs section
+Make sure you `Run as Administrator` so that you install for all users, and select `Advanced` so that you can
+install QGIS Server, otherwise it will only install QGIS Desktop.  Ensure that you install the `gdal-ecw` and `gdal-mss` plugins from the Libs section
 so that you can read ECW images and can utilise the SQL Server Native Client driver.
 
 NOTE: Pozi Server 2.2.8 ships with default configuration files for QGIS Server IIS Integration using FastCGI -- the following folder is assumed to exist if you have installed Pozi Server to the default `C:\Program Files (x86)\Pozi` location:
@@ -96,7 +96,7 @@ NOTE: If you have installed QGIS Server to a location other than the default `C:
 ```
 %windir%\system32\inetsrv\appcmd.exe unlock config -section:system.webServer/handlers
 
-"%systemroot%\system32\inetsrv\appcmd" set config -section:system.webServer/fastCgi /+"[fullPath='C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe']" /commit:apphost
+"%systemroot%\system32\inetsrv\appcmd" set config -section:system.webServer/fastCgi /+"[fullPath='C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe',idleTimeout='604800']" /commit:apphost
 
 "%systemroot%\system32\inetsrv\appcmd" set config /section:isapiCgiRestriction /+"[path='C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe',description='PoziQgisServer',allowed='True']"
 ```
