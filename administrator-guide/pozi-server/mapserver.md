@@ -149,10 +149,38 @@ Development notes that may contain useful additional information for Pozi develo
 
 ## Configuring Clean Urls for MapServer FastCGI
 
-
-`/Pozi/MapServer/Next/VicMapFeatures`
-
+To set up an example of MapServer FastCGI with a "clean url" configuration that hides the `MAP` query string parameter, open a Command Prompt using `Run As Administrator` and run the following commands:
 
 ```
-"%systemroot%\system32\inetsrv\appcmd.exe" add apppool /name:"PoziQgisServer"
+mkdir "C:\Program Files (x86)\Pozi\server\iis\Pozi\MapServer\Next\VicMapFeatures"
+xcopy "C:\Program Files (x86)\Pozi\server\iis\Pozi\MapServer\web.config" "C:\Program Files (x86)\Pozi\server\iis\Pozi\MapServer\Next\VicMapFeatures"
 ```
+
+Open the new `web.config` file located in the `C:\Program Files (x86)\Pozi\server\iis\Pozi\MapServer\Next\VicMapFeatures` folder and replace the `PoziMapServerFastCgi` with `'PoziMapServerNextVicMapFeaturesFastCgi` -- please note that this handler name has to be unique which is why we are replacing it:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <handlers>
+            <add name="PoziMapServerNextVicMapFeaturesFastCgi" path="*" verb="*" type="" modules="FastCgiModule" scriptProcessor="C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\ms\apps\mapserv.exe"
+            resourceType="Unspecified" requireAccess="Script" allowPathInfo="false" preCondition=""  />
+        </handlers>
+        <caching enabled="true" enableKernelCache="true" />
+    </system.webServer>
+</configuration>
+```
+
+Below we are going to create another application pool that we are going to set the `MAP` environment variable for:
+
+```
+"%systemroot%\system32\inetsrv\appcmd.exe" add apppool /name:"PoziMapServerNextVicMapFeatures"
+"%systemroot%\system32\inetsrv\appcmd.exe" set app "Default Web Site/Pozi/MapServer/Next/VicMapFeatures" /applicationPool:"PoziMapServerNextVicMapFeatures"
+
+"%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.applicationHost/applicationPools /+"[name='PoziMapServerNextVicMapFeatures'].environmentVariables.[name='MS_MAPFILE',value='C:\Program Files (x86)\Pozi\server\data\local\sample\queenscliffe\vmfeat_iis_clean.map']" /commit:apphost
+"%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.applicationHost/applicationPools /+"[name='PoziMapServerNextVicMapFeatures'].environmentVariables.[name='MS_MAP_NO_PATH',value='TRUE']" /commit:apphost
+```
+
+And now MapServer should respond to query for that `MS_MAPFILE` without including it in URL and will not allow passing the `MAP` environment variable in the query string:
+
+[http://local.pozi.com:3001/iis/mapserver/next/vicmapfeatures?service=WMS&request=GetCapabilities](http://local.pozi.com:3001/iis/mapserver/next/vicmapfeatures?service=WMS&request=GetCapabilities)
