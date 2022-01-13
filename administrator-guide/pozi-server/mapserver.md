@@ -174,6 +174,8 @@ Open the new `web.config` file located in the `C:\Program Files (x86)\Pozi\serve
 Below we are going to create another application pool that we are going to set the `MAP` environment variable for:
 
 ```
+"%systemroot%\system32\inetsrv\appcmd" add app /site.name:"Default Web Site" /path:/Pozi/MapServer/Next/VicMapFeatures /physicalPath:"C:\Program Files (x86)\Pozi\server\iis\Pozi\MapServer\Next\VicMapFeatures"
+
 "%systemroot%\system32\inetsrv\appcmd.exe" add apppool /name:"PoziMapServerNextVicMapFeatures"
 "%systemroot%\system32\inetsrv\appcmd.exe" set app "Default Web Site/Pozi/MapServer/Next/VicMapFeatures" /applicationPool:"PoziMapServerNextVicMapFeatures"
 
