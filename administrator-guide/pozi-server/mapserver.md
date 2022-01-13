@@ -179,6 +179,13 @@ Below we are going to create another application pool that we are going to set t
 "%systemroot%\system32\inetsrv\appcmd.exe" add apppool /name:"PoziMapServerNextVicMapFeatures"
 "%systemroot%\system32\inetsrv\appcmd.exe" set app "Default Web Site/Pozi/MapServer/Next/VicMapFeatures" /applicationPool:"PoziMapServerNextVicMapFeatures"
 
+"%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.applicationHost/applicationPools /+"[name='PoziMapServerNextVicMapFeatures'].recycling.periodicRestart.schedule.[value='02:00:00']" /commit:apphost
+"%systemroot%\system32\inetsrv\appcmd.exe" set apppool "PoziMapServerNextVicMapFeatures" /recycling.periodicRestart.time:00:00:00
+"%systemroot%\system32\inetsrv\appcmd.exe" set apppool "PoziMapServerNextVicMapFeatures" /processModel.idleTimeout:00:00:00
+"%systemroot%\system32\inetsrv\appcmd.exe" set apppool "PoziMapServerNextVicMapFeatures" /startMode:AlwaysRunning
+"%systemroot%\system32\inetsrv\appcmd.exe" set app "Default Web Site/Pozi/MapServer/Next/VicMapFeatures" /preloadEnabled:true
+
+
 "%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.applicationHost/applicationPools /+"[name='PoziMapServerNextVicMapFeatures'].environmentVariables.[name='MS_MAPFILE',value='C:\Program Files (x86)\Pozi\server\data\local\sample\queenscliffe\vmfeat_iis_clean.map']" /commit:apphost
 "%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.applicationHost/applicationPools /+"[name='PoziMapServerNextVicMapFeatures'].environmentVariables.[name='MS_MAP_NO_PATH',value='TRUE']" /commit:apphost
 ```
