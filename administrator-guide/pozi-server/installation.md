@@ -20,6 +20,23 @@ grand_parent: Administrator Guide
 3. mkdir "C:\Program Files (x86)\Pozi\userdata\local"
 4. mklink /D "C:\Program Files (x86)\Pozi\userdata\local\sample" "C:\Program Files (x86)\Pozi\server\data\local\sample"
 
+## Enable permissions on `userdata` folder
+
+The `C:\Program Files (x86)\Pozi` will be created by the installation process with limited permissions for editing. To enable your user account to make changes within the userdata folder, do the following:
+
+1. in Windows Explorer, navigate to `C:\Program Files (x86)\Pozi`
+2. right click `userdata` folder
+3. Properties > Security > Edit > Add > Locations > select Entire Directory > OK
+4. type part of the user name of the support account, then click Check Names
+5. select your name and click OK, then click OK again
+6. tick Modify / Allow, then click OK
+7. click OK
+
+## Prepare `userdata` folder
+
+1. delete `sample` and `vrt` folders
+2. create `local` folder
+
 ## Testing New Versions
 
 ### Install Test or Dev Release
@@ -58,6 +75,13 @@ This will revert from the higher numbered `dev` manifest version to the lower nu
 Important note: any additional folders under the `server` folder that have been set up for "clean" URL configuration for QGIS Server will not appear in the new installation, which would be catastrophic for those sites that are using it. They must be copied from the renamed server folder.
 
 ## Troubleshooting
+
+If PoziConnectServer doesn't appear in Windows Services, open PowerShell in Administrator mode, and enter the following:
+
+```
+cd "C:\Program Files (x86)\Pozi\updater"
+.\nssm.exe install PoziConnectServer "C:\Program Files (x86)\Pozi\server\poziserver.exe"
+```
 
 ### Ping Test Failed
 
