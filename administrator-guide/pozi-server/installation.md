@@ -66,8 +66,8 @@ Then stop and start the `PoziConnectUpdater` service. Monitor the `updater.log` 
 To rollback to a previous version (e.g., from `v2.3.0-beta.3` on `dev` manifest to `v2.2.0` on `production` manifest):
 
 1. revert the manifest file to the `production` version by emptying the contents
-2. rename the `server` folder
-3. update the manifest from `dev` to `production`
+2. stop the `PoziConnectServer` service
+3. rename the `server` folder
 4. stop and start the `PoziConnectUpdater` service
 
 This will revert from the higher numbered `dev` manifest version to the lower numbered production manifest version.
