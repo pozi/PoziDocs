@@ -8,4 +8,4 @@ bundle exec jekyll serve
 
 Point your web browser to http://127.0.0.1:4000/PoziDocs/
 
-The published docs site currently resides at https://pozi.github.io/PoziDocs/
+The published docs site is at https://docs.pozi.com/
