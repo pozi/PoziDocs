@@ -22,5 +22,5 @@ Refer to [https://html-color-codes.info/color-names/](https://html-color-codes.i
 
 | Colour         | Colour Name          | Colour Value             |
 |:---------------|:---------------------|:-------------------------|
-| <svg width="40" height="20"><rect width="40" height="20" style="fill:#CD5C5C" /></svg> | IndianRed | `#CD5C5C` |
-| <svg width="40" height="20"><rect width="40" height="20" style="fill:#F08080" /></svg> | LightCoral | `#F08080` |
+| <svg width="50" height="20"><rect width="50" height="20" style="fill:indianred" /></svg> | IndianRed | `#CD5C5C` |
+| <svg width="50" height="20"><rect width="50" height="20" style="fill:lightcoral" /></svg> | LightCoral | `#F08080` |
