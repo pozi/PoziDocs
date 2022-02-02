@@ -5,7 +5,6 @@ parent: Pozi Server
 grand_parent: Administrator Guide
 ---
 
-
 # Serving Images and Other Files
 
 Pozi can display and link to images and documents within internal networks and on the web.
@@ -41,7 +40,7 @@ In this example, the `bridges` dataset contains a field name called `image_file_
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <OGRVRTDataSource>
-    <OGRVRTLayer name="building_defects_2019">
+    <OGRVRTLayer name="bridges">
         <SrcDataSource>\\gis\layers\assets\bridges.tab</SrcDataSource>
         <SrcSQL dialect="sqlite">
             select
