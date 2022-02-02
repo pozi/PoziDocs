@@ -4,6 +4,14 @@ title: Link In
 parent: Administrator Guide
 ---
 
+## *Under Construction*
+
+*This page is a work in progress. Please refer to our existing Help Guide for information about this topic.*
+
+[Existing Help Guide](https://help.pozi.com/){: .btn .btn-outline }
+
+---
+
 # Link-In
 
 The Pozi link-in enables other applications to launch Pozi and zoom to specific locations on the map.

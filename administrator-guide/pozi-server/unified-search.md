@@ -5,6 +5,14 @@ parent: Pozi Server
 grand_parent: Administrator Guide
 ---
 
+## *Under Construction*
+
+*This page is a work in progress. Please refer to our existing Help Guide for information about this topic.*
+
+[Existing Help Guide](https://help.pozi.com/){: .btn .btn-outline }
+
+---
+
 # Unified Search
 
 The Unified Search is a general purpose search utility designed to handle common search workflows that typical users might have. There is no limit to the number of datasets that can be configured in the search. However, the more that is added, the more potential for the search results of less useful features to crowd out the more important results.

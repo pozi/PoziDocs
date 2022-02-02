@@ -5,6 +5,14 @@ parent: Administrator Guide
 has_children: true
 ---
 
+## *Under Construction*
+
+*This page is a work in progress. Please refer to our existing Help Guide for information about this topic.*
+
+[Existing Help Guide](https://help.pozi.com/){: .btn .btn-outline }
+
+---
+
 # Introduction to Pozi Server
 
 Pozi Server is the software in the Pozi Enterprise suite that enables internal datasets to be served to Pozi users within the organisation’s network.

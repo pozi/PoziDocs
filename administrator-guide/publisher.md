@@ -4,6 +4,14 @@ title: Publisher
 parent: Administrator Guide
 ---
 
+## *Under Construction*
+
+*This page is a work in progress. Please refer to our existing Help Guide for information about this topic.*
+
+[Existing Help Guide](https://help.pozi.com/){: .btn .btn-outline }
+
+---
+
 # Publisher
 
 The Pozi Publisher enables your organisation to export selected internal datasets out to the web, where they can be viewed by the public in the Pozi App.
