@@ -2,6 +2,7 @@
 layout: default
 title: PIQA
 parent: Pozi Connect
+nav_order: 10
 ---
 
 # PIQA

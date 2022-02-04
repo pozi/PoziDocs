@@ -3,6 +3,7 @@ layout: default
 title: Pozi Connect for M1s
 parent: Pozi Connect
 has_children: true
+nav_order: 5
 ---
 
 # Pozi Connect for M1s

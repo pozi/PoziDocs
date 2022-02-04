@@ -2,6 +2,7 @@
 layout: default
 title: Installation
 parent: Pozi Connect
+nav_order: 1
 ---
 
 # Pozi Connect Installation
