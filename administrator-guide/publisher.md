@@ -37,7 +37,7 @@ When Pozi Publisher is first configured for you, you will be supplied with some 
 3. File > Save As...and give it a unique name that suitably describes the dataset
 4. edit the following components:
   * `OGRVRTLayer`: name of dataset
-  * `SrcDataSource`: file path of dataset
+  * `SrcDataSource`: file path of dataset (ensure that the path is one recognised by the server)
   * `SrcLayer`: table name (in the case of MapInfo tables, it is the file name without the folder path or file extension)
 5. File > Save
 6. open up the VRT file in QGIS to check that everything is formatted correctly - if you can see the layer in QGIS, then it has been formatted correctly
