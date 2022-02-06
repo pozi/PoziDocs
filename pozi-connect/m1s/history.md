@@ -13,7 +13,7 @@ nav_order: 10
 Here are some of the improvements and bug fixes. (For a complete history of all changes, see [here](
 https://github.com/pozi/PoziConnectConfig/commits/master/~Shared/))
 
-### Version 2.9 (Sep 2021)
+### Version 2.9.1 (Feb 2022)
 
 * support for new Datashare data supplies
 * prevent property number updates where existing address is a complex site
@@ -27,10 +27,12 @@ https://github.com/pozi/PoziConnectConfig/commits/master/~Shared/))
 * populate road name with existing road name from Vicmap if council road name is a close match but not an exact match
 * remove rural address when house number is blank
 * prevent Comments being null when address isn't perfectly formed
+* improve Comments for A edits to show which parcel is shared
 * update all references from Groundtruth to Pozi
 * upgrade GDAL library to v3.1.4
 * various bug fixes
-* configuration updates for Frankston, Strathbogie, Wangaratta, Maribyrnong, West Wimmera, Campaspe, Melton, Warrnambool, Surf Coast, Murrindindi, Glen Eira, Manningham, Hobsons Bay, Kingston, Indigo, Latrobe, Hepburn, Swan Hill, Monash, Baw Baw, Mitchell, Mildura, Maroondah and Ballarat
+* update Help link to new docs site
+* configuration updates for Frankston, Strathbogie, Wangaratta, Maribyrnong, West Wimmera, Campaspe, Melton, Warrnambool, Surf Coast, Murrindindi, Glen Eira, Manningham, Hobsons Bay, Kingston, Indigo, Latrobe, Hepburn, Swan Hill, Monash, Baw Baw, Mitchell, Mildura, Maroondah, Ballarat, Knox, Casey, Central Goldfields, Alpine, Nillumbik, South Gippsland and Loddon
 
 ### Version 2.8 (Feb 2020)
 
