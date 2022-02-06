@@ -8,7 +8,7 @@ parent: User Guide
 
 *This page is a work in progress. Please refer to our existing Help Guide for information about this topic.*
 
-[Existing Help Guide](https://help.pozi.com/){: .btn .btn-outline }
+[Existing Help Guide](https://help.pozi.com/search?query=enquire){: .btn .btn-outline }
 
 ---
 

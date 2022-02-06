@@ -8,7 +8,7 @@ parent: Administrator Guide
 
 *This page is a work in progress. Please refer to our existing Help Guide for information about this topic.*
 
-[Existing Help Guide](https://help.pozi.com/){: .btn .btn-outline }
+[Existing Help Guide](https://help.pozi.com/search?query=widgets){: .btn .btn-outline }
 
 ---
 
