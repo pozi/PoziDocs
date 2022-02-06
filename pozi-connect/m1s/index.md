@@ -10,7 +10,7 @@ nav_order: 5
 
 Pozi Connect generates council 'M1' reports that are critical link for updating the Victorian state map base.
 
-![M1 Form](http://i.imgur.com/rlp9JKS.jpg "M1 Form")
+![M1 Form](https://i.imgur.com/rlp9JKS.jpg "M1 Form")
 
 Pozi Connect compares the council's property data with the latest Vicmap data and determines what updates are required in Vicmap to accurately reflect the council's property and address information.
 
@@ -53,7 +53,7 @@ Confirm that the dates of the files in these main folder(s) correspond to the da
 
 Launch Pozi Connect. From the picklist, select the first M1 task that relates to your council name:
 
-![Pozi Connect for M1s](http://i.imgur.com/Yx9RH81.png "Pozi Connect for M1s")
+![Pozi Connect for M1s](https://i.imgur.com/Yx9RH81.png "Pozi Connect for M1s")
 
 For each of the three to four M1 tasks in the picklist:
 
@@ -71,7 +71,7 @@ Upon completion of the 'Generate M1' M1 task, you can find the completed M1 repo
 
 Open up the M1 report in Excel to preview the updates that Pozi Connect has generated. Scroll all the way to the right, and review the Comments (column AX) field.
 
-![M1 Comments](http://i.imgur.com/bZz3m1Z.png "M1 Comments")
+![M1 Comments](https://i.imgur.com/bZz3m1Z.png "M1 Comments")
 
 For the first few times you run Pozi Connect, you may find you want to hold back some updates if you're not sure that you want to submit them. For example, if an update's comments show that a property is going to be added as a multi-assessment and you're not sure that it should be a multi-assessment, you may delete the row before you submit the M1. This gives you the opportunity to check your property system to see if you're happy with affected properties' parcel description (if two properties share the same parcel description, Pozi Connect will assume they are meant to be a multi-assessment).
 

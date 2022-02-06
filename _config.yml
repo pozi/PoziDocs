@@ -22,7 +22,7 @@ title: Pozi Help
 email: info@pozi.com
 description: User and administrator guides for getting the most out of the Pozi platform
 # baseurl: "/PoziDocs" # the subpath of your site, e.g. /blog
-# url: "https://docs.pozi.com" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://docs.pozi.com" # the base hostname & protocol for your site, e.g. https://example.com
 twitter_username: PoziApp
 github_username:  pozi
 logo: "/assets/images/pozi-help-logo.png"

@@ -15,7 +15,7 @@ nav_order: 1
 4. change the default path to the desired PoziConnect location on your network (pick the location of the existing installation if you have previously installed it)
 5. follow the prompts to complete the installation
 
-<img src="http://i.imgur.com/yvkIfL9.png" alt="Pozi Connect Setup" width="350">
+<img src="https://i.imgur.com/yvkIfL9.png" alt="Pozi Connect Setup" width="350">
 
 ### Customise Configuration
 
@@ -43,7 +43,7 @@ Pozi Connect uses your PC's existing ODBC connection settings. It does not requi
 
 ### Pozi Connect fails to start
 
-Download and install the [Microsoft Visual C++ 2008 Redistributable Package (x86)](http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&displaylang=en), and try running Pozi Connect again.
+Download and install the [Microsoft Visual C++ 2008 Redistributable Package (x86)](https://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&displaylang=en), and try running Pozi Connect again.
 
 ### Pozi Connect returns an 'Incorrect padding' error
 

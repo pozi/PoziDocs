@@ -34,7 +34,7 @@ When opening a spreadsheet:
 
 *Example filter to select only `0` values*
 
-![](http://i.imgur.com/rjvYdGt.png)
+![](https://i.imgur.com/rjvYdGt.png)
 
 
 ## Council Parcel

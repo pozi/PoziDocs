@@ -7,7 +7,7 @@ nav_order: 10
 
 # PIQA
 
-Each year, Victoria's [Department of Environment, Land, Water & Planning](http://www.delwp.vic.gov.au/) (DELWP) requires councils to supply it with an extract of property and address information from their internal property systems to be used for an annual Property Information Quality Audit (PIQA).
+Each year, Victoria's [Department of Environment, Land, Water & Planning](https://www.delwp.vic.gov.au/) (DELWP) requires councils to supply it with an extract of property and address information from their internal property systems to be used for an annual Property Information Quality Audit (PIQA).
 
 The process of extracting, filtering and formatting this data is time consuming and often overwhelming for councils, and can require the participation and co-operation of council staff members across GIS, Rates and IT departments.
 
@@ -23,7 +23,7 @@ When DELWP requests you to submit a PIQA extract for your council, follow these 
 4. From the Task drop-down list, select the item that relates to your council (eg, Alpine Shire Council would choose 'Alpine PIQA'). If you are prompted for a database username and/or password, enter them. You may have your own credentials that you can use, or you may use the database administrator credentials. Then click OK and wait for the application to run (it can take several minutes).
 5. Check the `PoziConnect\output` folder (or you may have specified your own location in the settings) for a newly created 'PIQA Export.zip' file. This file contains two CSV spreadsheets that have been generated from the council’s property and address data. Email the zip file to your DELWP contact.
 
-If you experience any difficulties such as the Pozi Connect failing to start, please download and install the [Microsoft Visual C++ 2008 Redistributable Package (x86)](http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&displaylang=en), and try running Pozi Connect again.
+If you experience any difficulties such as the Pozi Connect failing to start, please download and install the [Microsoft Visual C++ 2008 Redistributable Package (x86)](https://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&displaylang=en), and try running Pozi Connect again.
 
 For any issues that are not solved by installing this patch, please contact Groundtruth.
 

@@ -10,9 +10,9 @@ nav_order: 2
 
 ## Usage
 
-After generating your M1 in Pozi Connect, visit the [Pozi Connect Property Health Dashboard](http://dashboard.pozi.com/property/).
+After generating your M1 in Pozi Connect, visit the [Pozi Connect Property Health Dashboard](https://dashboard.pozi.com/property/).
 
-![Pozi Connect Property Health Dashboard](http://i.imgur.com/kOlywWO.png)
+![Pozi Connect Property Health Dashboard](https://i.imgur.com/kOlywWO.png)
 
 In Windows Explorer, navigate to your `PoziConnect\output\Statistics\` folder, and drag your property statistics .json file from the folder and drop it into the Property Health Dashboard web page.
 
@@ -90,7 +90,7 @@ Statistics items like `vicmap_parcels_no_propnum` are measures of the number of 
 
 To generate updated statistics, Pozi Connect needs to import the council's latest property data and the latest version of Vicmap. It re-calculates the statistics when it generates the M1.
 
-Follow the usual three (or four) steps that you do for doing an M1. At the end of the step 3, Pozi Connect automatically launches the [webpage](http://dashboard.pozi.com/property/) in your browser and you can drag the `PoziConnect\output\Statistics\[your council] Property Statistics.json` file into the webpage.
+Follow the usual three (or four) steps that you do for doing an M1. At the end of the step 3, Pozi Connect automatically launches the [webpage](https://dashboard.pozi.com/property/) in your browser and you can drag the `PoziConnect\output\Statistics\[your council] Property Statistics.json` file into the webpage.
 
 Whether you choose to submit the M1 that gets created is optional.
 

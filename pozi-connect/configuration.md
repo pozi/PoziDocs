@@ -9,7 +9,7 @@ nav_order: 2
 
 PoziConnect provides a simple interface for accessing, processing, analysing and exporting spatial and non-spatial data.
 
-It uses the power of the popular open source [GDAL/OGR translator library](http://www.gdal.org/index.html), with these important enhancements:
+It uses the power of the popular open source [GDAL/OGR translator library](https://www.gdal.org/index.html), with these important enhancements:
 
 * it provides a simple interface that exposes typical translation functions that administrators can preconfigure using INI files and enable users to select and adjust according to specific tasks
 * it uses the bare minimum information required to complete a task; for example:
@@ -116,7 +116,7 @@ Example:
 * Oracle
 * ODBC
 
-A reference guide for the SQL functions in SQLite and Spatialite is [here](http://www.gaia-gis.it/spatialite-2.3.1/spatialite-sql-2.3.1.html). A tutorial with examples is [here](http://www.gaia-gis.it/gaia-sins/spatialite-tutorial-2.3.1.html).
+A reference guide for the SQL functions in SQLite and Spatialite is [here](https://www.gaia-gis.it/gaia-sins/spatialite-sql-4.2.0.html). A tutorial with examples is [here](https://www.gaia-gis.it/gaia-sins/spatialite-tutorial-2.3.1.html).
 
 #### Web Service
 
@@ -276,7 +276,7 @@ Example:
 
 ## Advanced
 
-A number of other OGR commands are available for advanced use within POZI Connect. These operate as per the ogr2ogr cli. Currently, the following commands are supported. For advanced usage, see the [ogr2ogr](http://www.gdal.org/ogr2ogr.html) documentation.
+A number of other OGR commands are available for advanced use within Pozi Connect. These operate as per the ogr2ogr cli. Currently, the following commands are supported. For advanced usage, see the [ogr2ogr](https://gdal.org/drivers/vector/index.html) documentation.
 
 ### Dim
 
