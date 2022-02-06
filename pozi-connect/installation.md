@@ -17,39 +17,65 @@ nav_order: 1
 
 ### Step-by-Step Instructions
 
-*Note: the steps below show the many dialogs that the PC/server may display during the installation. The installation process requires that you accept all prompts. You may see fewer prompts if you are carrying out the installation with elevated priviledges.*
+The steps below show the many dialogs that the PC/server may display during the installation. The installation process requires that you accept all prompts.
 
-Double-click the `PoziConnect-*.*.*.msi` to launch the installer.
+You may see fewer prompts depending on the operating system and your user permissions.
+
+#### Backup Existing Installation
+
+For peace of mind when performing an upgrade on an existing Pozi Connect installation, you may choose to backup your existing installation by copying the entire `PoziConnect` folder to another location (eg, `C:\Temp\PoziConnect\`). In the event that the new installation causes any issues, you can restore files or folders from the backup.
+
+#### Launch Installer
+
+Double-click the downloaded `PoziConnect-*.*.*.msi` file to launch the installer.
+
+#### Start Setup Wizard
 
 <img src="img/installation_01.png" alt="" style="zoom:75%;" />
 
 Click `Next >`
 
+#### Specify Installation Location
+
 <img src="img/installation_02.png" alt="" style="zoom:75%;" />
 
-Set the `Folder` to the existing location at which Pozi Connect is installed (ie, typically a folder on your organisation's network).
+Pozi Connect is typically installed in a shared location on your organisation's network.
 
-If the installer doesn't remember the location at which Pozi Connect was previously installed, click the `Browse` buttton and navigate to the folder on your network where Pozi Connect is installed (note: include in the file path the folder `...\PoziConnect\`)
+**Important: When upgrading an existing installation, set the `Folder` to the location at which Pozi Connect is already installed**
+
+If the installer doesn't remember the location at which Pozi Connect was previously installed, click the `Browse` buttton and navigate to the Pozi Connect folder on your network (note: the file path ends with the folder name `...\PoziConnect\`)
+
+#### Begin Installation
 
 <img src="img/installation_03.png" alt="" style="zoom:75%;" />
 
 Click `Install`
 
+#### Accept Installer Information
+
 <img src="img/installation_04.png" alt="" style="zoom:75%;" />
 
 Click `OK`
+
+#### Confirm Installation
 
 <img src="img/installation_05.png" alt="" style="zoom:75%;" />
 
 Click `Yes`
 
+#### Accept User Account Control Prompt
+
 <img src="img/installation_06.png" alt="" style="zoom:75%;" />
 
 Click `Yes`
 
+#### Confirm Continue
+
 <img src="img/installation_07.png" alt="" style="zoom:75%;" />
 
 Click `Yes`
+
+#### Finish Installation
 
 <img src="img/installation_08.png" alt="" style="zoom:75%;" />
 
@@ -57,7 +83,7 @@ Click `Finish`
 
 **Success!** You've now installed/upgraded Pozi Connect.
 
-Launch Pozi Connect to resume your data maintenance processes using the latest Pozi Connect.
+Launch Pozi Connect to resume your regular data maintenance processes.
 
 ---
 
