@@ -35,7 +35,7 @@ Pozi Connect uses your PC’s existing ODBC connection settings. It does not req
 
 ### Does Pozi Connect extract any confidential information?
 
-Pozi Connect only extracts the tables and fields from your property system that contains information relevant to the PIQA. You can check for yourself what information will be sent to DEPI by opening up the CSV files located in the “Output” folder in Excel.
+Pozi Connect only extracts the tables and fields from your property system that contains information relevant to the PIQA. You can check for yourself what information will be sent to DELWP by opening up the CSV files located in the “Output” folder in Excel.
 
 ### Does Pozi Connect make any changes to the property system?
 
@@ -43,7 +43,7 @@ Pozi Connect does not perform any update on your property database. It simply re
 
 ### How does Pozi Connect work?
 
-Pozi Connect extracts tables from your council’s property database and imports them into a temporary SQLite database file. It then performs a series of queries (customised for each council) on this file to generate PIQA-compliant CSV files that contain the council’s address and parcel information required for the PIQA audits. These two CSV files are automatically zipped up for you, ready for emailing to DEPI.
+Pozi Connect extracts tables from your council’s property database and imports them into a temporary SQLite database file. It then performs a series of queries (customised for each council) on this file to generate PIQA-compliant CSV files that contain the council’s address and parcel information required for the PIQA audits. These two CSV files are automatically zipped up for you, ready for emailing to DELWP.
 
 ### What else is Pozi Connect capable of?
 
