@@ -20,7 +20,7 @@ After Pozi configures and implements Pozi Connect for your council, you can gene
 
 ## Vicmap Maintenance Cycle
 
-Vicmap data is maintained by DELWP. Councils obtain updates of [Vicmap Address](https://datashare.maps.vic.gov.au/search?q=uuid%3Db9e9146d-8378-5c37-b6cd-63e3a8d05d02){:target="_blank"} and [Vicmap Property Simplified 1](https://datashare.maps.vic.gov.au/search?q=uuid%3Da752b99e-baee-502e-a58b-7d15fa6c57cd){:target="_blank"}{:target="_blank"} by downloading it weekly (recommended) or fortnightly from the [DELWP DataShare](https://datashare.maps.vic.gov.au/){:target="_blank"}.
+Vicmap data is maintained by DELWP. Councils obtain updates of [Vicmap Address](https://datashare.maps.vic.gov.au/search?q=uuid%3Db9e9146d-8378-5c37-b6cd-63e3a8d05d02){:target="_blank"} and [Vicmap Property Simplified 1](https://datashare.maps.vic.gov.au/search?q=uuid%3Da752b99e-baee-502e-a58b-7d15fa6c57cd){:target="_blank"} by downloading it weekly (recommended) or fortnightly from the [DELWP DataShare](https://datashare.maps.vic.gov.au/){:target="_blank"}.
 
 Pozi Connect uses this downloaded Vicmap data (as well as the council's current rates data) to automatically generate the required M1s. When the M1 is submitted, it feeds into the Vicmap maintenance cycle. The changes will not be immediate because of the DELWP/Jacobs maintenance schedules and occasional backlogs. Allow at least two weeks before you can expect to see the changes in Vicmap.
 
