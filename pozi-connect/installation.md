@@ -37,7 +37,7 @@ Click on the link to the `PoziConnect-*.*.*.msi` file to download the installer.
 
 ### Launch Installer
 
-Double-click the downloaded `PoziConnect-*.*.*.msi` file to launch the installer.
+Double-click the downloaded Pozi Connect `.msi` file to launch the installer.
 
 ### Start Setup Wizard
 
