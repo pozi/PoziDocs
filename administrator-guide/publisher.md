@@ -4,14 +4,6 @@ title: Publisher
 parent: Administrator Guide
 ---
 
-## *Under Construction*
-
-*This page is a work in progress. Please refer to our existing Help Guide for information about this topic.*
-
-[Existing Help Guide](https://help.pozi.com/){: .btn .btn-outline }
-
----
-
 # Publisher
 
 The Pozi Publisher enables your organisation to export selected internal datasets out to the web, where they can be viewed by the public in the Pozi App.
@@ -46,7 +38,25 @@ When Pozi Publisher is first configured for you, you will be supplied with some 
 9. (optional) use QGIS to style the layer and export an SLD file with the same name as the GeoJSON file and save it to the `public` folder
 10. email support@pozi.com with details of the new layer:
   * GeoJSON file name
-  * destination layer group in Pozi
+  * name of destination layer group in Pozi
   * any requests for specific styling
 
 Pozi Support will configure your Pozi site to display the newly synchronised layers.
+
+## Troubleshooting
+
+### Layers are not displaying in Pozi
+
+On the server on which Pozi Server is installed, navigate to `C:\Program Files (x86)\Pozi\userdata\public\` and check that the GeoJSON file exists. If the file exists, load the file in QGIS to check that it is a valid file.
+
+If the GeoJSON file is not able to display in QGIS, re-run the Publisher batch file to regenerate the GeoJSON.
+
+If the problem persists, check the source VRT file exists in the `public-datasets` folder. If the file exists, load the file in QGIS to check that it is a valid file.
+
+If the VRT file is not able to display in QGIS, open the VRT file in a text editor and check that the content is valid and points to a valid data source.
+
+If the problem persists, check that the source dataset can displayed in QGIS.
+
+### Layers are not syncing
+
+From the server on which Pozi Server is installed, go to Control Panel > Administrative Tools > Services > PoziConnectServer > right-click > Restart.
