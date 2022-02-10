@@ -45,6 +45,18 @@ The `C:\Program Files (x86)\Pozi` will be created by the installation process wi
 1. delete `sample` and `vrt` folders
 2. create `local` folder
 
+The `local` folder corresponds to the subdomain that you have configured, eg, `local.pozi.com`. You can add other folders to correspond to any other subdomains you might want to use.
+
+## SSL Certificates
+
+By default, Pozi Server dynamically obtains its own certificate for the `pozi.com` domain. This enables the local endpoint (eg `local.pozi.com`) to run securely.
+
+If your organisation wants to use its own SSL certificate, place the `certificate.cer` and `certificate.key` files in the root Pozi folder, and restart the PoziConnectServer service.
+
+Instead of configuring your DNS for `local.pozi.com`, you will use something like `poziserver.[yourorganisation].com`. Accordingly the subfolder you create inside the `userdata` folder (see Prepare Userdata Folder above) will need to correspond with the subdomain (eg, `userdata\poziserver` instead of `userdata\local`).
+
+Note: due to a current limitation in Pozi Server, it will still expect any static files such as images, style files, pre-rendered GeoJSON, etc, in `userdata\local` regardless of the subdomain used.
+
 ## Testing New Versions
 
 ### Install Test or Dev Release
