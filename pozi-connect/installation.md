@@ -7,6 +7,7 @@ nav_order: 1
 
 # Pozi Connect Installation
 
+*Note: Pozi Connect 2.9 contains breaking changes that affect M1 workflows. See [here](m1s/release-notes.html) for further information.*
 ## Express Instructions
 
 *This is a brief overview of the steps involved. For step-by-step instructions, including details of the prompts you'll encounter, go to the **Step-by-Step Instructions** below.*
