@@ -55,7 +55,7 @@ If your organisation wants to use its own SSL certificate, place the `certificat
 
 Instead of configuring your DNS for `local.pozi.com`, you will use something like `poziserver.[yourorganisation].com`. Accordingly the subfolder you create inside the `userdata` folder (see Prepare Userdata Folder above) will need to correspond with the subdomain (eg, `userdata\poziserver` instead of `userdata\local`).
 
-Note: due to a current limitation in Pozi Server, it will still expect any static files such as images, style files, pre-rendered GeoJSON, etc, in `userdata\local` regardless of the subdomain used.
+Note: due to a current limitation in Pozi Server, it will still expect any static files (images, style files, pre-rendered GeoJSON, etc) to be in `userdata\local` regardless of whatever subdomain is being used for domain forwarding.
 
 ## Testing New Versions
 
