@@ -124,7 +124,7 @@ Pozi Connect uses your PC's existing ODBC connection settings. It does not requi
 
 ### Pozi Connect fails to start
 
-Download and install the [Microsoft Visual C++ 2008 Redistributable Package (x86)](https://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&displaylang=en), and try running Pozi Connect again.
+Download and install the [Microsoft Visual C++ 2008 Redistributable Package (x86)](https://www.microsoft.com/en-au/download/details.aspx?id=11895), and try running Pozi Connect again.
 
 ### Pozi Connect returns an 'Incorrect padding' error
 
