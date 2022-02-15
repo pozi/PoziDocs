@@ -13,6 +13,11 @@ nav_order: 10
 Here are some of the improvements and bug fixes. (For a complete history of all changes, see [here](
 https://github.com/pozi/PoziConnectConfig/commits/master/~Shared/))
 
+### Version 2.9.2 (Feb 2022)
+
+* remove check for old Spatial Datamart tables
+* configuration updates for Knox, Alpine and Horsham
+
 ### Version 2.9.1 (Feb 2022)
 
 * support for new Datashare data supplies
