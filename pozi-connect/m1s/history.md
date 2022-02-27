@@ -16,7 +16,7 @@ https://github.com/pozi/PoziConnectConfig/commits/master/~Shared/))
 ### Version 2.9.2 (Feb 2022)
 
 * remove check for old Spatial Datamart tables
-* configuration updates for Knox, Alpine and Horsham
+* configuration updates for Knox, Alpine, Horsham and Moorabool
 
 ### Version 2.9.1 (Feb 2022)
 

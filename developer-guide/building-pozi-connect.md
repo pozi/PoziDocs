@@ -56,15 +56,15 @@ mklink /D C:\Users\Simon\GitHub\PoziConnect\tasks C:\Users\Simon\GitHub\PoziConn
 * Product Details > Product version > type latest release number (above)
 * when prompted about the Product Code, select 'Generate new'
 * Home > Build
-* msi installer file is created in `C:\Temp`
+* check dialog box for location of output msi file
 
 ## Publish Release
 
 ### GitHub
 
 * create new PoziConnect release: https://github.com/pozi/PoziConnect/releases/new
-* Tag version: (eg, v2.8)
-* Release title: (eg Release 2.8)
+* Tag version: (eg, v2.9.2)
+* Release title: (eg Release 2.9.2)
 * Description: (example)
 
 (check https://github.com/pozi/PoziConnectConfig/commits/master; identify which councils have had changes since [last release](https://github.com/pozi/PoziConnect/releases/latest))
@@ -74,6 +74,8 @@ mklink /D C:\Users\Simon\GitHub\PoziConnect\tasks C:\Users\Simon\GitHub\PoziConn
 Example:
 
 > Welcome to Pozi Connect v2.x.
+
+> **Click the .msi link below to download this release.**
 
 > This October 2017 release contains the following changes since the June 2017 (v2.04) release:
 
@@ -92,9 +94,9 @@ Example:
 
 ---
 
-* drag msi file from `C:\Temp` into box 'Attach binaries..'
+* drag msi file into box 'Attach binaries..'
 * click 'Publish release'
-* visit https://github.com/pozi/PoziConnect/releases/latest to confirm that it's published
+* visit [https://github.com/pozi/PoziConnect/releases/latest](https://github.com/pozi/PoziConnect/releases/latest) to confirm that it's published
 
 ---
 
