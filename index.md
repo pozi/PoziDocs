@@ -12,3 +12,8 @@ Welcome to Pozi Docs!
 
 [User Guide](user-guide/){: .btn .btn-outline }
 [Administrator Guide](administrator-guide/){: .btn .btn-outline }
+
+Also available:
+
+* [Pozi Connect](pozi-connect/)
+* [Developer Guide](developer-guide/)
