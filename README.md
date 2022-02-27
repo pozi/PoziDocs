@@ -6,6 +6,6 @@ Run local Jekyll server
 bundle exec jekyll serve
 ```
 
-Point your web browser to http://127.0.0.1:4000/PoziDocs/
+Point your web browser to http://127.0.0.1:4000/
 
 The published docs site is at https://docs.pozi.com/
