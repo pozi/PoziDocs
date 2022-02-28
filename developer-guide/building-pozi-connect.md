@@ -56,7 +56,7 @@ mklink /D C:\Users\Simon\GitHub\PoziConnect\tasks C:\Users\Simon\GitHub\PoziConn
 * Product Details > Product version > type latest release number (above)
 * when prompted about the Product Code, select 'Generate new'
 * Home > Build
-* check dialog box for location of output msi file
+* check Output log for location of output msi file
 
 ## Publish Release
 
