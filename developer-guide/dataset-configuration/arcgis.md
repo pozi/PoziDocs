@@ -8,6 +8,8 @@ nav_order: 1
 
 # ArcGIS
 
+[ArcGIS Online Health Dashboard](https://status.arcgis.com/)
+
 ## FeatureServer API GeoJSON
 
 Obtaining GeoJSON endpoint:

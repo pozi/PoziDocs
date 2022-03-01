@@ -15,3 +15,4 @@ Some third party data services require that credentials or a key be appended to 
 
 * DELWP Image Web Server
 * Google Maps API (for Street View imagery)
+* Pingdom status check

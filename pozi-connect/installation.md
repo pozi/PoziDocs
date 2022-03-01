@@ -32,7 +32,7 @@ For peace of mind when performing an upgrade on an existing Pozi Connect install
 
 Go to [https://github.com/pozi/PoziConnect/releases/latest](https://github.com/pozi/PoziConnect/releases/latest){:target="_blank"}
 
-<img src="img/download.png" alt="" style="zoom:60%;" />
+<img src="img/download.png" alt="" style="zoom:40%;" />
 
 Click on the link to the `PoziConnect-*.*.*.msi` file to download the installer.
 
@@ -42,13 +42,13 @@ Double-click the downloaded Pozi Connect `.msi` file to launch the installer.
 
 ### Start Setup Wizard
 
-<img src="img/installation_01.png" alt="" style="zoom:75%;" />
+<img src="img/installation_01.png" alt="" style="zoom:65%;" />
 
 Click `Next >`
 
 ### Specify Installation Location
 
-<img src="img/installation_02.png" alt="" style="zoom:75%;" />
+<img src="img/installation_02.png" alt="" style="zoom:65%;" />
 
 Pozi Connect is typically installed in a shared location on your organisation's network.
 
@@ -58,37 +58,39 @@ If the installer doesn't remember the location at which Pozi Connect was previou
 
 ### Begin Installation
 
-<img src="img/installation_03.png" alt="" style="zoom:75%;" />
+<img src="img/installation_03.png" alt="" style="zoom:65%;" />
 
 Click `Install`
 
 ### Accept Installer Information
 
-<img src="img/installation_04.png" alt="" style="zoom:75%;" />
+You may encounter various prompts and warnings. Click OK/Yes on all of them.
+
+<img src="img/installation_04.png" alt="" style="zoom:65%;" />
 
 Click `OK`
 
 ### Confirm Installation
 
-<img src="img/installation_05.png" alt="" style="zoom:75%;" />
+<img src="img/installation_05.png" alt="" style="zoom:65%;" />
 
 Click `Yes`
 
 ### Accept User Account Control Prompt
 
-<img src="img/installation_06.png" alt="" style="zoom:75%;" />
+<img src="img/installation_06.png" alt="" style="zoom:65%;" />
 
 Click `Yes`
 
 ### Confirm Continue
 
-<img src="img/installation_07.png" alt="" style="zoom:75%;" />
+<img src="img/installation_07.png" alt="" style="zoom:65%;" />
 
 Click `Yes`
 
 ### Finish Installation
 
-<img src="img/installation_08.png" alt="" style="zoom:75%;" />
+<img src="img/installation_08.png" alt="" style="zoom:65%;" />
 
 Click `Finish`
 

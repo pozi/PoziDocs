@@ -29,7 +29,7 @@ nav_order: 5
 
 WMS GetMap requests can be made with an `sld` parameter that contains the URL of an SLD file.
 
-*Note: as at 25 Feb 2022, the data.gov.au WMS service is not successfully responding to WMS requests that point to external SLDs. See 'Embedded SLD' below for an alternative styling configuration.*
+*Note: as at 25 Feb 2022, the data.gov.au WMS service is not successfully responding to WMS requests that point to external SLDs. See 'Embedded SLD' below for an alternative styling configuration. Or better yet, consider using WFS if the dataset is small enough.*
 
 ### Embedded SLD
 

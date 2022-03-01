@@ -36,9 +36,18 @@ nav_order: 1
 
 ### Options
 
+#### Metadata
+
 ```
   "about": {
     "organisation": "City of Greater Bendigo",
     "url": "https://data.gov.au/dataset/ds-dga-3df55d47-8fde-4f2d-97a6-ba51bdbad0cb"
   },
 ```
+#### "What's Here" Datasets
+
+Display the feature's attributes (which would normally be displayed in the Details panel of the child record) directly in What's Here, taking the place of the title.
+
+`"promoteDetails": true`
+
+Only be used when there is no requirement to view Location/Dimensions, Source or child records.
