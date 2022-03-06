@@ -7,9 +7,11 @@ nav_order: 5
 
 # Community Consultation
 
-Community consultation is a Pozi Pro feature that clients use to gather information from the public for strategic initiatives.
+*Community consultation is available for *Pozi Pro*, *Enterprise* and *Enterprise Cloud* offerings.*
 
-They typically comprises two forms 
+Community consultation enables gathering information from the public for strategic initiatives.
+
+A campain may make use of one or both of these forms:
 
 * main 'survey' form, displayed to user when they click a certain location
 * 'feedback' form, displayed when user clicks on a feature (such as another user's survey response)
