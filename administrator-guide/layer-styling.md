@@ -14,8 +14,49 @@ parent: Administrator Guide
 
 # Layer Styling
 
+## Styled Layer Descriptor (SLD)
+
+### Generating SLDs
+
+1. open your source dataset in QGIS
+2. style the layer using the QGIS styling controls
+3. export the style to an SLD file
+4. place SLD file in public sync folder, along with the corresponding GeoJSON file
+
+<img src="img/creating-sld-in-qgis.gif" alt="" style="zoom:65%;" />
+
+### Styling Options
+
+Supported:
+
+* simple points, lines, polygons symbolisers
+* rule-based styles
+* basic labels
+* customisable legend text
+
+Not currently supported:
+
+* fill hatching
+* label offsets
+* rules based on a field name that contains spaces
+
+Tips
+
+* opacity must be defined in the colour - the layer's global opacity slider has no effect
+
 ## Bubble Symbols
 
+In addition to standard map styles, Pozi supports user-friendly "bubble" symbols.
+
+Pick your symbol and colour, and email support@pozi.com to organise the setup on the style. The symbol can be referenced by URL or name, and the colour must be provided as a colour hex code (eg `#CD5C5C`) from one of the options below.
+### Symbols
+
+Symbols can be chosen from any of the following:
+
+* https://thenounproject.com/
+* http://map-icons.com/
+
+Obtain the URL or icon name for the desired icon.
 ### Colours
 
 Bubble symbols can be styled with the following colours.

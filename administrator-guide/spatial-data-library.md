@@ -44,3 +44,4 @@ Yearly
 - [Vicmap Reference Tables](https://datashare.maps.vic.gov.au/search?q=uuid%3Db83285a2-0355-5b2d-8dcd-fe56438b7e89){:target="_blank"}
 - [Vicmap Elevation](https://datashare.maps.vic.gov.au/search?q=uuid%3D91b4951f-4cef-5768-a412-3a64679ee627){:target="_blank"}
 - [Vicmap Hydro](https://datashare.maps.vic.gov.au/search?q=uuid%3D23a264f2-d5aa-5b73-95a2-812454053147){:target="_blank"}
+- [Vicmap Vegetation](https://datashare.maps.vic.gov.au/search?q=uuid%3D68360f70-5737-51f8-9f8c-70a764d01aa5){:target="_blank"}

@@ -8,6 +8,28 @@ nav_order: 1
 
 # Dataset Configuration
 
+## Dataset Types
+
+```
+GeoJSON
+Image
+ImageWMS
+QGISGetProjectSettings
+Search
+TileWMS
+TileWMSAuth
+Mapbox
+Mapbox-GL
+Mapbox-OLSM
+VectorTile
+Vicmap
+WFSGetCapabilities
+WMSGetCapabilities
+XYZ
+```
+
+See https://github.com/pozi/PoziApp/blob/master/app/src/ConfigManager/schemas/layer-schema.json
+
 ## Examples
 
 ### Basic GeoJSON
