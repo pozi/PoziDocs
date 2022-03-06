@@ -4,7 +4,7 @@ title: Configuring Widgets
 parent: Developer Guide
 ---
 
-# Widgets
+# Configuring Widgets
 
 ## Example
 
