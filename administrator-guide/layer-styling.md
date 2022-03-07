@@ -23,7 +23,7 @@ parent: Administrator Guide
 3. export the style to an SLD file
 4. place SLD file in public sync folder, along with the corresponding GeoJSON file
 
-<img src="img/creating-sld-in-qgis.gif" alt="" style="zoom:65%;" />
+<img src="../img/creating-sld-in-qgis.gif" alt="" style="zoom:65%;" />
 
 ### Styling Options
 

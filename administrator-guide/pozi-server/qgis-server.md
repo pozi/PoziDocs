@@ -141,7 +141,7 @@ A quick way to set the variables above is the following:
 
 ```
 
-<img src="img/pozi-qgis-server-iis.png" alt="FastCGI Settings" style="zoom:60%;" />
+<img src="../img/pozi-qgis-server-iis.png" alt="FastCGI Settings" style="zoom:60%;" />
 
 ### Application Pool
 

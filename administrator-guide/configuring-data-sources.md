@@ -33,4 +33,4 @@ Example feature:
 
 When this feature is selected in Pozi, it will display like this:
 
-<img src="img/info-panel.png" alt="Screenshot of Info Panel" style="zoom:50%;" />
+<img src="../img/info-panel.png" alt="Screenshot of Info Panel" style="zoom:50%;" />

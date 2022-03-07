@@ -44,7 +44,7 @@ The example below uses a QGIS project called `property.qgs`.
 
 
 
-<img src="img/qgis-project-properties-wms-configuration.png" alt="Screenshot of QGIS Project Properties WMS Configuration" style="zoom:60%;" />
+<img src="../img/qgis-project-properties-wms-configuration.png" alt="Screenshot of QGIS Project Properties WMS Configuration" style="zoom:60%;" />
 
 
 
@@ -75,4 +75,4 @@ It is recommend to only enable WFS for layers with fewer than 10K features.
 
 
 
-<img src="img/qgis-project-properties-wfs-configuration.png" alt="Screenshot of QGIS Project Properties WfS Configuration" style="zoom:60%;" />
+<img src="../img/qgis-project-properties-wfs-configuration.png" alt="Screenshot of QGIS Project Properties WfS Configuration" style="zoom:60%;" />

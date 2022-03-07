@@ -19,7 +19,7 @@ CUstom Dashboard for Cardinia: https://statuspage.freshping.io/25822-PoziStatusF
 
 ## Outage Message
 
-<img src="img/pingdom-outage-notification.png" alt="" style="zoom:50%;" />
+<img src="../img/pingdom-outage-notification.png" alt="" style="zoom:50%;" />
 
 Upon loading, Pozi sends a request to Pingdom to determine whether any services are currently down. If so, it will display this message if any of the following services are down:
 

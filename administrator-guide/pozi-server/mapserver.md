@@ -113,7 +113,7 @@ A quick way to set the variables above is the following:
 "%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.webServer/fastCgi /+"[fullPath='C:\Program Files (x86)\Pozi\server\vendor\gdal\bin\ms\apps\mapserv.exe'].environmentVariables.[name='PROJ_LIB',value='C:\Program Files (x86)\Pozi\server\Vendor\GDAL\bin\proj\share']" /commit:apphost
 ```
 
-<img src="img/pozi-qgis-server-iis.png" alt="FastCGI Settings" style="zoom:60%;" />
+<img src="../img/pozi-qgis-server-iis.png" alt="FastCGI Settings" style="zoom:60%;" />
 
 ### Application Pool
 
