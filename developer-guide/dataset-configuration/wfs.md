@@ -17,7 +17,9 @@ nav_order: 5
 ### data.gov.au
 
 * [GeoServer Layer Preview](https://data.gov.au/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage?0)
-* [GetCapabilities](https://data.gov.au/geoserver/wms?SERVICE=WFS&REQUEST=GetCapabilities)
+* [GetCapabilities](https://data.gov.au/geoserver/wfs?SERVICE=WFS&REQUEST=GetCapabilities)
+* [Example GetCapabilities for single dataset](https://data.gov.au/geoserver/roadside-conservation-zones-greater-shepparton/wfs?request=GetCapabilities)
+* [Example GetFeature Request](https://data.gov.au/geoserver/roadside-conservation-zones-greater-shepparton/wfs?request=GetFeature&typeName=ckan_486a2abd_9144_49bd_bc19_56bf6bf5c8b0&outputFormat=json)
 
 ### Pozi Cloud Server
 

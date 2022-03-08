@@ -10,7 +10,7 @@ parent: Administrator Guide
 
 Pozi uses parent-child relationships between datasets to provide unlimited querying capabilities.
 
-<img src="../img/info-panel-parent-and-child-records.png" alt="" style="zoom:65%;" />
+<img src="../img/info-panel-parent-and-child-records.png" alt="" style="zoom:50%;" />
 
 The parent record contains various attributes, such as the ones that are visible in the Details panel, other hidden attributes, and also the record's geometry. Any of these can be used as a key for querying other datasets. And any child record can become a parent of another dataset, and so on.
 

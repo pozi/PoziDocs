@@ -19,7 +19,7 @@ In a command prompt (administrator mode), enter the following:
 mklink /D "C:\Program Files (x86)\Pozi\userdata\local\images" "\\HRCCSVRFILE01\shared\Images"
 ```
 
-<img src="img/symlink-example.png" alt="Screenshot of example symlink" style="zoom:60%;" />
+<img src="../img/symlink-example.png" alt="Screenshot of example symlink" style="zoom:60%;" />
 
 
 This creates a virtual file path within the Pozi userdata folder to enable Pozi Server to access the network folder.

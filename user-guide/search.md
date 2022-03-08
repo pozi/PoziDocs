@@ -13,3 +13,8 @@ parent: User Guide
 ---
 
 # Search
+
+
+## Unified Search
+
+*Unified Search is available in *Pozi Enterprise* and *Enterprise Cloud* offerings.*

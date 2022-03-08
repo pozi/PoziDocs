@@ -13,3 +13,12 @@ parent: User Guide
 ---
 
 # Print
+
+The Pozi map view and associated information can be saved to a PDF for printing or sharing.
+
+Press the `Print` button at the top-right of the map
+
+## Options
+
+#### Title
+

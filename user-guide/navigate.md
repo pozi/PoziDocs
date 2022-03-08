@@ -13,3 +13,13 @@ parent: User Guide
 ---
 
 # Navigate
+
+It's easy to navigate around Pozi using interactions that are common to many popular web map applications.
+
+
+## Pan
+
+Click and hold down the left-mouse button
+## Zoom
+
+### Touch Device Features

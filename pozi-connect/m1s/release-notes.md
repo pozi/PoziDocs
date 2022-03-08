@@ -12,9 +12,9 @@ nav_order: 1
 
 *February 2022*
 
-In October 2021, [DELWP announced](https://www.land.vic.gov.au/maps-and-spatial/maps-and-spatial-news/discover-victorian-spatial-data-with-new-datashare-platform) the retirement of the existing Spatial Datamart service for ordering Vicmap datasets, and moving to the new [DataShare](https://datashare.maps.vic.gov.au/) service. In February 2022, the Spatial Datamart was retired.
+In October 2021, [DELWP announced](https://www.land.vic.gov.au/maps-and-spatial/maps-and-spatial-news/discover-victorian-spatial-data-with-new-datashare-platform){:target="_blank"} the retirement of the existing Spatial Datamart service for ordering Vicmap datasets, and moving to the new [DataShare](https://datashare.maps.vic.gov.au/){:target="_blank"} service. In February 2022, the Spatial Datamart was retired.
 
-Your council's weekly or fortnightly downloads of Vicmap Address and Vicmap Property Simplified 1 must now be set up in DataShare. If you haven't done so already, log in to [DataShare](https://datashare.maps.vic.gov.au/) to set up your new repeat orders of Vicmap Address and Vicmap Property Simplified 1.
+Your council's weekly or fortnightly downloads of Vicmap Address and Vicmap Property Simplified 1 must now be set up in DataShare. If you haven't done so already, log in to [DataShare](https://datashare.maps.vic.gov.au/){:target="_blank"} to set up your new repeat orders of [Vicmap Address](https://datashare.maps.vic.gov.au/search?q=uuid%3Db9e9146d-8378-5c37-b6cd-63e3a8d05d02){:target="_blank"} and [Vicmap Property Simplified 1](https://datashare.maps.vic.gov.au/search?q=uuid%3Da752b99e-baee-502e-a58b-7d15fa6c57cd){:target="_blank"}.
 
 ### What's Different?
 
@@ -35,4 +35,4 @@ If you decide to extract your DataShare downloads to a different location (for i
 
 ### Installation
 
-[Download and install the latest Pozi Connect](../installation.html){: .btn .btn-outline }
+[Download and install the latest Pozi Connect](../../installation/){: .btn .btn-outline }

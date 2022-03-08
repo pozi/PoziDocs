@@ -90,7 +90,7 @@ Example:
 
 > **Click the .msi link below to download this release.**
 
-> For installation instructions, visit https://docs.pozi.com/pozi-connect/installation.html
+> For installation instructions, visit [https://docs.pozi.com/pozi-connect/installation/](https://docs.pozi.com/pozi-connect/installation/)
 
 ---
 
