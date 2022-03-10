@@ -53,8 +53,8 @@ Pick your symbol and colour, and email support@pozi.com to organise the setup on
 
 Symbols can be chosen from any of the following:
 
-* https://thenounproject.com/
-* http://map-icons.com/
+* [https://thenounproject.com/](https://thenounproject.com/){:target="_blank"}
+* [http://map-icons.com/](http://map-icons.com/){:target="_blank"}
 
 Obtain the URL or icon name for the desired icon.
 ### Colours

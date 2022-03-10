@@ -105,6 +105,6 @@ The configuration must instead be done manually at the *site* level instead of t
 
 ### Examples
 
-* [Add Survey form to Pozi as layer](https://github.com/groundtruth/PoziApp/commit/d9098f244ae9ce34622c84d07b226f3241d787f3)
-* [Add Feedback form fragments to layer](https://github.com/groundtruth/PoziApp/commit/9a13722c3cab269ba6b74c9ae8a6fb7addda0ca6)
-* [Disable Feedback form](https://github.com/pozi/PoziAppConfig/commit/3afdb9ebe250ff32e1cd30f44f23a446ee1cb8f4)
+* [Add Survey form to Pozi as layer](https://github.com/groundtruth/PoziApp/commit/d9098f244ae9ce34622c84d07b226f3241d787f3){:target="_blank"}
+* [Add Feedback form fragments to layer](https://github.com/groundtruth/PoziApp/commit/9a13722c3cab269ba6b74c9ae8a6fb7addda0ca6){:target="_blank"}
+* [Disable Feedback form](https://github.com/pozi/PoziAppConfig/commit/3afdb9ebe250ff32e1cd30f44f23a446ee1cb8f4){:target="_blank"}

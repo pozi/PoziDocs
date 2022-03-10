@@ -10,8 +10,8 @@ nav_order: 20
 ## Requirements
 
 Repositories
-* [PoziConnect](https://github.com/pozi/PoziConnect)
-* [PoziConnectConfig](https://github.com/pozi/PoziConnectConfig)
+* [PoziConnect](https://github.com/pozi/PoziConnect){:target="_blank"}
+* [PoziConnectConfig](https://github.com/pozi/PoziConnectConfig){:target="_blank"}
 
 Software
 * GitHub Desktop

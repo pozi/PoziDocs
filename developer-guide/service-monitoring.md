@@ -7,15 +7,14 @@ nav_order: 10
 
 # Service Monitoring
 
-* [Pingdom](https://my.pingdom.com/app/3/home)
-* [Freshping](https://pozi.freshping.io/dashboard)
+* [Pingdom](https://my.pingdom.com/app/3/home){:target="_blank"}
+* [Freshping](https://pozi.freshping.io/dashboard){:target="_blank"}
 
 ## Public Status Page
 
-Public view: http://stats.pingdom.com/w3ggvgl5rino
-Settings: https://my.pingdom.com/app/reports/public
-
-CUstom Dashboard for Cardinia: https://statuspage.freshping.io/25822-PoziStatusForCardinia
+* [Public view](http://stats.pingdom.com/w3ggvgl5rino){:target="_blank"}
+* [Settings](https://my.pingdom.com/app/reports/public){:target="_blank"}
+* [Custom Dashboard for Cardinia](https://statuspage.freshping.io/25822-PoziStatusForCardinia){:target="_blank"}
 
 ## Outage Message
 

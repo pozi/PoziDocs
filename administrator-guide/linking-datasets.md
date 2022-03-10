@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Enquire
+title: Linking Datasets
 parent: Administrator Guide
 ---
 
