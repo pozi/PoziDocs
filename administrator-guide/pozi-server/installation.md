@@ -19,7 +19,7 @@ grand_parent: Administrator Guide
 
 * support account
 * service account
-* internet access (need to reach connect.pozi.com)
+* internet access (needed to communicate with connect.pozi.com for software updates)
 
 ## Download and Install
 
@@ -47,9 +47,15 @@ The `C:\Program Files (x86)\Pozi` will be created by the installation process wi
 
 The `local` folder corresponds to the subdomain that you have configured, eg, `local.pozi.com`. You can add other folders to correspond to any other subdomains you might want to use.
 
+## DNS Configuration
+
+Configure the network Domain Name System (DNS) so that any requests to `local.pozi.com` resolve to the IP address of the server on which Pozi Server is installed.
+
+<img src="../img/dns-manager.png" alt="" style="zoom:65%;" />
+
 ## SSL Certificates
 
-By default, Pozi Server dynamically obtains its own certificate for the `pozi.com` domain. This enables the local endpoint (eg `local.pozi.com`) to run securely.
+Pozi Server communicates only on port 443, so all requests must be sent via https. The Pozi Server installation manages its own SSL certificate (`*.pozi.com`) to enable the local endpoint (eg `local.pozi.com`) to run securely.
 
 If your organisation wants to use its own SSL certificate, place the `certificate.cer` and `certificate.key` files in the root Pozi folder, and restart the PoziConnectServer service.
 
