@@ -21,13 +21,19 @@ Obtaining GeoJSON endpoint:
 
 ### Parameters
 
+[[Example REST Services API]](https://services3.arcgis.com/TJxZpUnYIJOvcYwE/arcgis/rest/services/CILZones/FeatureServer/0/query?f=html&outFields=*&where=1=1)
+
 #### For Entire Dataset
 
 `/query?f=geojson&outFields=*&where=1=1`
 
 [[Example]](https://services3.arcgis.com/TJxZpUnYIJOvcYwE/arcgis/rest/services/CILZones/FeatureServer/0/query?f=geojson&outFields=*&where=1=1)
 
+#### Set Maximum Features
 
+`&resultRecordCount=1`
+
+[[Example]](https://services3.arcgis.com/TJxZpUnYIJOvcYwE/arcgis/rest/services/CILZones/FeatureServer/0/query?f=geojson&outFields=*&resultRecordCount=1&where=1=1)
 #### Spatial Intersection
 
 `/query?f=geojson&outFields=*&returnGeometry=true&inSR=4326&spatialRel=esriSpatialRelIntersects&geometryType=[$esriGeometryType]&geometry=[$esriGeometry]`

@@ -7,7 +7,7 @@ nav_order: 5
 
 # Community Consultation
 
-*Community consultation is available for *Pozi Pro*, *Enterprise* and *Enterprise Cloud* offerings.*
+*Community consultation is available for **Pozi Pro**, **Enterprise** and **Enterprise Cloud** offerings.*
 
 Community consultation enables gathering information from the public for strategic initiatives.
 
@@ -24,11 +24,11 @@ Log in to [Jotform](https://www.jotform.com/myforms).
 
 There is now a template that can be cloned for creating new forms:
 
-https://www.jotform.com/build/211461449813859
+[https://www.jotform.com/build/211461449813859](https://www.jotform.com/build/211461449813859)
 
 This will eliminate the a lot of the instructions below.
 
-To do: create another template for feedback
+*To do: create another template for feedback*
 
 ### Build
 

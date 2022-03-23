@@ -1,11 +1,17 @@
 # PoziDocs
 
+## Dev Environment
+
 Run local Jekyll server
 
-```bash
+```
 bundle exec jekyll serve
 ```
 
-Point your web browser to http://127.0.0.1:4000/
+Preview: http://127.0.0.1:4000/
 
-The published docs site is at https://docs.pozi.com/
+## Publishing
+
+Repository: https://github.com/pozi/PoziDocs/
+
+Published site: https://docs.pozi.com/

@@ -58,6 +58,12 @@ See https://github.com/pozi/PoziApp/blob/master/app/src/ConfigManager/schemas/la
 
 ### Options
 
+#### Opacity
+
+```
+  "opacity": 0.7
+```
+
 #### Metadata
 
 ```
@@ -66,6 +72,25 @@ See https://github.com/pozi/PoziApp/blob/master/app/src/ConfigManager/schemas/la
     "url": "https://data.gov.au/dataset/ds-dga-3df55d47-8fde-4f2d-97a6-ba51bdbad0cb"
   },
 ```
+
+#### Zoom Levels
+
+```
+  "minZoom": 16,
+  "maxResolution": 4
+```
+
+#### Exclude Fields
+
+Attributes from the source data can be hidden from the info panel display by specifying the fields in an `exclude` array, nested under the `spatial` setting.
+
+```
+  "exclude": [
+    "type",
+    "subtype"
+  ]
+```
+
 #### "What's Here" Datasets
 
 Display the feature's attributes (which would normally be displayed in the Details panel of the child record) directly in What's Here, taking the place of the title.
