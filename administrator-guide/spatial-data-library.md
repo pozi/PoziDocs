@@ -16,6 +16,33 @@ The recommended structure is a network folder hierarchy based on the name of eac
 
 When naming of the network folders, it is acceptable to use any recognisable abbreviations for organisation names (eg DELWP) to keep file paths short. Individual dataset folder names are also abbreviated where the data supplier also uses a standard abbreviation (eg AAV, CIP, VMPROP).
 
+```
+GIS
+├── Admin
+├── Data
+│   ├── DELWP
+│   │   ├── VMADD
+│   │   ├── VMADMIN
+│   │   ├── VMELEV
+│   │   ├── VMFEAT
+│   │   ├── VMHYDRO
+│   │   ├── VMPLAN
+│   │   ├── VMPROP
+│   │   ├── VMREFTAB
+│   │   └── VMPLAN
+│   ├── HRCC Assets
+│   ├── HRCC Local Laws
+│   ├── HRCC Planning 
+│   ├── HRCC Rates
+│   ├── PTV
+│   ├── OpenStreetMap
+│   └── WCMA
+│       ├── Elevation
+│       └── Imagery
+├── Tools
+└── Workspaces
+```
+
 ## Popular Data Sources
 
 ### Victorian State Government

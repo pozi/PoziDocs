@@ -134,6 +134,26 @@ If you encounter an error saying 'Incorrect padding', it may be because your dat
 
 Reset your password so that it doesn't contain any special characters. (If your password needs to use at least one special character, use '#'.)
 
+### Pozi Connect returns a 'No column definitions found for table' error
+
+Check that you have the appropriate permissions to connect to the database. Also check that the table prefix specified in Pozi Connect is the one still used in the database.
+
+To see a list of tables (and table prefix) that your user account has access to, launch the GDAL shell by launching this batch file:
+
+```
+...\PoziConnect\vendor\release-xxxx-gdal-x-x-x-mapserver-x-x-x\SDKShell.bat
+```
+
+Then type in:
+
+```
+ogrinfo ODBC:DSN=yourDSNname;UID=yourDBusername;PWD=yourDBpassword -ro -so
+```
+
+(If you're running as a trusted user of the database, you can leave out the `UID` and `PWD` settings.)
+
+Then hit enter. It might take a few minutes, but it should list all the tables you have access to. Check if the table specified in the initial error message appears in the list.
+
 ### Cannot connect to data source
 
 _In this example, we'll assume that we're trying to connect to a DSN called 'pthprod'._
