@@ -167,7 +167,7 @@ In the System DSN tab, check if there is a data source for 'pthprod'. If not, ad
 Open the relevant Pozi Connect config file (eg `PoziConnect\tasks\~Shared\M1 Shared - Import Pathway.ini` or equivalent client-specific task) in a text editor and update the DSN name:
 
 ```
-Pathway_DSN: pthprod32
+Data_Source: ODBC:DSN=pthprod32
 ```
 
 ### Pozi Connect returns an error number 1073741512

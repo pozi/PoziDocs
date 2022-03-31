@@ -114,7 +114,21 @@ This is the alternative distribution which, for clients who have this installed,
 
 ## Notify Users
 
+### Blog
+
+* duplicate previous Pozi Connect release blog post
+* update details
+* publish
+* copy content as HTML to clipboard
 ### MailChimp
 
-* mailchimp.com
-* create new campaign, select audience with "PCM1 Mailing List" tag
+* log in to https://mailchimp.com
+* create new campaign: https://us3.admin.mailchimp.com/campaigns/#/create-campaign
+* select audience with "PCM1 Mailing List" tag
+* choose Basic template
+* update content
+  * insert logo
+  * paste HTML from blog post
+  * update footer with web link, Twitter link, and remove Facebook
+* send test email, and check inbox
+* send final email
