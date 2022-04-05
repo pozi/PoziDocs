@@ -116,6 +116,28 @@ You can enter multiple filter terms, separated by commas. Save the file and exit
 
 This file should persist in your Pozi Connect application folder, so you need only do this step once, not every time you update the application or configuration.
 
+## Moving Pozi Connect
+
+Pozi Connect can be easily moved to a new location at any time to suit your changing needs. The `PoziConnect` folder is self-contained, meaning the application will continue to work as long as all the files within the folder are moved together. Any PC that can access the `PoziConnect.exe` file can run it.
+
+Moving Pozi Connect can be done with or without upgrading at the same time. See the following options.
+
+### Move Without Upgrading
+
+1. move the entire `PoziConnect` folder to desired location
+2. update any user's desktop shortcuts to point the the new location
+
+### Upgrade and Move
+
+1. run the installer to install Pozi Connect at the new location
+2. copy the `PoziConnect\output` folder from the old location to the new one
+3. copy the `PoziConnect\PoziConnect.site.ini` file from the old location to the new one
+4. update any user's existing desktop shortcuts to point the the new location
+
+### Other Changes
+
+The reason for your needing to change Pozi Connect location may coincide with other changes on your network, such as the location of source data. If your source data (eg Vicmap datasets) has moved, your Pozi Connect configuration will also need to be updated. Email support@pozi.com with details of any changes to your source data so that your Pozi Connect task files can be updated accordingly.
+
 ## FAQ
 
 ### How does Pozi Connect connect to my corporate database?
