@@ -63,6 +63,24 @@ Instead of configuring your DNS for `local.pozi.com`, you will use something lik
 
 Note: due to a current limitation in Pozi Server, it will still expect any static files (images, style files, pre-rendered GeoJSON, etc) to be in `userdata\local` regardless of whatever subdomain is being used for domain forwarding.
 
+## Scheduled Restarts
+
+As a Windows server, Pozi Server is designed to be always on. However sometimes Windows services can fail and cause the sync and other functions to become unresponsive.
+
+To minimise any extended outages, configure a nightly scheduled task to force Pozi Server to restart to ensure it remains responsive.
+
+The task requires `Run with highest privileges` to be able to restart services as that is usually restricted to Administrators.
+
+The script will log exceptions to RestartPoziConnectServer.log if they occur.
+
+```powershell
+Try {
+  Restart-Service PoziConnectServer
+} Catch {
+  "[$(Get-Date)] [ERROR] $($_)" | Add-Content RestartPoziConnectServer.log
+}
+```
+
 ## Testing New Versions
 
 ### Install Test or Dev Release
