@@ -111,6 +111,7 @@ PYTHONHOME = "C:\OSGeo4W\apps\Python39"
 QGIS_SERVER_LOG_FILE = "C:\Program Files (x86)\Pozi\server\iis\logs\qgis_server.log"
 QGIS_SERVER_LOG_LEVEL = "0"
 QGIS_PLUGINPATH = "C:\OSGeo4W\apps\qgis-ltr\plugins"
+GDAL_DRIVER_PATH = "C:\OSGeo4W\bin\gdalplugins"
 ```
 
 A quick way to set the variables above is the following:
@@ -138,6 +139,7 @@ A quick way to set the variables above is the following:
 "%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.webServer/fastCgi /+"[fullPath='C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe'].environmentVariables.[name='QGIS_SERVER_LOG_FILE',value='C:\Program Files (x86)\Pozi\server\iis\logs\qgis_server.log']" /commit:apphost
 "%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.webServer/fastCgi /+"[fullPath='C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe'].environmentVariables.[name='QGIS_SERVER_LOG_LEVEL',value='0']" /commit:apphost
 "%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.webServer/fastCgi /+"[fullPath='C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe'].environmentVariables.[name='QGIS_PLUGINPATH',value='C:\OSGeo4W\apps\qgis-ltr\plugins']" /commit:apphost
+"%systemroot%\system32\inetsrv\appcmd.exe" set config -section:system.webServer/fastCgi /+"[fullPath='C:\OSGeo4W\apps\qgis-ltr\bin\qgis_mapserv.fcgi.exe'].environmentVariables.[name='GDAL_DRIVER_PATH',value='C:\OSGeo4W\bin\gdalplugins']" /commit:apphost
 
 ```
 
